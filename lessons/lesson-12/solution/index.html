@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lektion 12 – Formulare (Lösung)</title>
+  <style>
+    .fehler { color: red; }
+    .erfolg { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Lektion 12 – Formulare (Lösung)</h1>
+
+  <form id="mein-formular">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Dein Name">
+    </div>
+    <div>
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" placeholder="deine@email.de">
+    </div>
+    <div>
+      <label for="nachricht">Nachricht:</label>
+      <textarea id="nachricht" name="nachricht" rows="4"></textarea>
+      <span id="zeichenzahl">0 Zeichen</span>
+    </div>
+    <div>
+      <input type="checkbox" id="agb" name="agb">
+      <label for="agb">Ich akzeptiere die AGB</label>
+    </div>
+    <button type="submit">Absenden</button>
+  </form>
+
+  <p id="fehler-meldung" class="fehler"></p>
+  <p id="ausgabe" class="erfolg"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
