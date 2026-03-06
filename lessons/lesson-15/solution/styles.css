@@ -1,0 +1,51 @@
+/* Lektion 15 – Lösung-Styles */
+
+:root {
+  --hauptfarbe: #3498db;
+  --hintergrund: #f9f9f9;
+  --text-farbe: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--hintergrund);
+  color: var(--text-farbe);
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+#farb-box {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+#ziel-element {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.hervorgehoben {
+  background-color: gold;
+  border-color: darkorange;
+  font-weight: bold;
+}
+
+#farb-vorschau {
+  width: 150px;
+  height: 50px;
+  background-color: var(--hauptfarbe);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 10px;
+}
